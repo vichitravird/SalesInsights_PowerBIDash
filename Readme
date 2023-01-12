@@ -1,0 +1,91 @@
+Project Report
+
+Project Title
+Sales Insights Data Analyst Project
+
+Presented by
+Vichitravir Dwivedi
+MS in Business Analytics
+University of Texas at Dallas
+ 
+Contents
+Problem Statement	3
+The aim of this project will be to:	3
+Purpose	3
+Stakeholders	3
+Result	3
+Success Criteria	3
+Tools and Skills	3
+ETL	4
+Task 1: Data acquisition	4
+Task 2: Data Cleaning	4
+Task3: Building PowerBI Dashboard	6
+Data Model	6
+Data Transformation	6
+Final Dashboard	8
+References	9
+
+
+ 
+Problem Statement
+AtliQ Hardware Delhi based company which supplies computer hardware and peripherals to many of their clients namely Surge Stores, Nomad Stores, Excel Stores, Electrical Sara Stores all across India. Atliq Hardware has its head office in Delhi and other regional offices throughout India. Bhavin Patel is the Sales Director at Atliq Hardware. Mr. Patel is tracking sales in this dynamically growing market, and he is finding it difficult to get the exact count. The Sales figures according to Bhavin is not accurately given by regional Sales Manager. According to him the regional sales managers are extrapolating the sales. 
+Extremely, frustrated with the current scenario Mr. Patel is helpless as the actual sales are declining and he is not able to gain the real insights into the data. Bhavin ha Excel sheets that stores sales data but due to its humungous amount Bhavin is getting frustrated and not able to reach to a solution. Bhavin is interested in simple understandable dashboard which is easy to understand but at the same time shows accurate figures.
+The aim of this project will be to:
+Purpose
+To unlock sales insights that re not visible before for sales team for decision support and automate them to reduce manual time spent in data gathering. 
+Stakeholders
+Sales Director
+Marketing Team
+Customer Service Team
+Data and Analytics Team
+IT
+Result
+An automated dashboard providing quick and latest sales insights to support data driven decision making
+Success Criteria
+Dashboard uncovering sales order insights with lates data available 
+Sales team able to take better decisions and prove 10% cost savings of total spend
+Sales analysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity
+
+Tools and Skills:
+SQL, Power BI, Data Warehousing, Business Analytics, ETL
+ETL
+Task 1: Data acquisition
+Task 2: Data Cleaning
+SQL Query
+ 
+Output
+ 
+
+SQL Query
+ 
+Output
+ 
+Note: We can see a couple of Null Values here, which we will take care during the data cleaning process.
+SQL Query
+ 
+Output
+ 
+Note: The sales amount for the 2nd row is a negative value. We know amount has to be either 0 or positive value, this means that the negative values are garbage values which we need to take care of.
+
+Task3: Building PowerBI Dashboard
+Data Model
+Our data model represents a STAR Schema
+ 
+
+Data Transformation
+Removing Null values from the Column [zone] in our sales_markets Table
+ 
+ 
+
+Removing non positive sales_amount values from sales_transactions tables
+ 
+Adding conditional column to convert USD values to INR
+ 
+
+Final Dashboard
+ 
+ 
+References
+
+•	https://github.com/codebasics/DataAnalysisProjects/tree/master/1_SalesInsights
+•	https://www.youtube.com/watch?v=68m2UCtedj0&list=PLeo1K3hjS3uva8pk1FI3iK9kCOKQdz1I9&index=9
